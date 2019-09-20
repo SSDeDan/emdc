@@ -1,0 +1,32 @@
+<emdc>
+<!--Spring AOP-->
+<backup class="com.briup.backup.BackupImpl">
+    <rootPath>F:\\emdc</rootPath>
+    <clientSendEnvs>client_send_envs.bak</clientSendEnvs>
+    <gatheredLines>gathered_lines.bak</gatheredLines>
+    <storeEnvs>store_envs.bak</storeEnvs>
+</backup>
+
+<client  class="com.briup.client.ClientImpl">
+    <ip>127.0.0.1</ip>
+</client>
+
+<server class="com.briup.server.ServerImpl">
+    <port>123</port>
+</server>
+
+<gather class="com.briup.gather.GatherImpl">
+    <radwtmp>F:\\radwtmp</radwtmp>
+</gather>
+
+<store class="com.briup.store.StoreImpl">
+    <driver>com.mysql.cj.jdbc.Driver</driver>
+    <url>jdbc:mysql://127.0.0.1:8017/emdc?rewriteBatchedStatements=true</url>
+    <user>root</user>
+    <password>root</password>
+    <batchSize>1000</batchSize>
+</store>
+</emdc>
+
+
+
